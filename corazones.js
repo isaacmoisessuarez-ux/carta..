@@ -27,13 +27,13 @@ function crearCorazon() {
 // Intervalo de caída de corazones
 setInterval(crearCorazon, 300);
 
-// Control de audio (Inicia en el segundo 0)
+// Control de audio
 const audio = document.getElementById("musica");
 let musicaIniciada = false;
 
 function activarMusica() {
   if (!musicaIniciada) {
-    audio.currentTime = 0;
+    audio.currentTime = 3; 
     audio.play().catch(error => console.log("El navegador bloqueó el autoplay: ", error));
     musicaIniciada = true;
   }
