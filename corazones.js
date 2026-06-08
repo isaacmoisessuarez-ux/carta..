@@ -29,7 +29,7 @@ setInterval(crearCorazon, 300);
 
 // Control de audio
 const audio = document.getElementById("musica");
-let musicaIniciada = false;
+let musicaIniciada = true;
 
 function activarMusica() {
   if (!musicaIniciada) {
