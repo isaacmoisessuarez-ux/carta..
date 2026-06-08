@@ -33,7 +33,8 @@ let musicaIniciada = false;
 
 function activarMusica() {
   if (!musicaIniciada) {
-    audio.play().catch(error => console.log("El navegador requiere interacción previa: ", error));
+    audio.currentTime = 6;
+    audio.play().catch(error => console.log("El navegador bloqueó el autoplay: ", error));
     musicaIniciada = true;
   }
 }
