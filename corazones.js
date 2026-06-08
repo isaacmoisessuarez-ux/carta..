@@ -33,7 +33,7 @@ let musicaIniciada = false;
 
 function activarMusica() {
   if (!musicaIniciada) {
-    audio.currentTime = 3;
+    audio.currentTime = 0;
     audio.play().catch(error => console.log("El navegador bloqueó el autoplay: ", error));
     musicaIniciada = true;
   }
